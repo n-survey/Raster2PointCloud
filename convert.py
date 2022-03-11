@@ -270,7 +270,7 @@ class Dialog(QMainWindow):
         self.setTabOrder(self.las_dir, self.vbs)
 
         _translate = QtCore.QCoreApplication.translate
-        self.setWindowTitle(_translate("self", "Raster2PointCloud Ver.2022.03.09"))
+        self.setWindowTitle(_translate("self", "Raster2PointCloud Ver.2022.03.11"))
         self.gazo.setText(_translate("self", "画像読込"))
         self.vbs.setToolTip(_translate("self", "起動用バッチファイルと、VBScriptを作成します。"))
         self.vbs.setText(_translate("self", "VBS作成"))
@@ -412,8 +412,8 @@ class Dialog(QMainWindow):
             xx = xd * size[0]
             yy = yd * size[1]
             xb = xt + yy
-            self.lineEdit_x.setText(str(round(xx)))
-            self.lineEdit_y.setText(str(abs(round(yy))))
+            self.lineEdit_x.setText(str(xx))
+            self.lineEdit_y.setText(str(abs(yy)))
             self.lineEdit_dx.setText(str(xb))
             self.lineEdit_dy.setText(str(yt))
         self.lineEdit_x.setFocus()
