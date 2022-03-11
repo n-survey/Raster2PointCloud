@@ -263,7 +263,7 @@ class Ui_self(object):
 
     def retranslateUi(self, self):
         _translate = QtCore.QCoreApplication.translate
-        self.setWindowTitle(_translate("self", "Raster2PointCloud Ver.2022.03.09"))
+        self.setWindowTitle(_translate("self", "Raster2PointCloud Ver.2022.03.11"))
         self.gazo.setText(_translate("self", "画像読込"))
         self.vbs.setToolTip(_translate("self", "起動用バッチファイルと、VBScriptを作成します。"))
         self.vbs.setText(_translate("self", "VBS作成"))
